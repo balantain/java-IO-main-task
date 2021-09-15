@@ -10,7 +10,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         File file = new File(InputService.getInputPath(scanner));
         scanner.close();
-
         if (file.isDirectory()){
             File output = new File("data/outputFile.txt");
             DirectoryService.saveDirectoryTreeIntoFile(file, output);

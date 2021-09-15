@@ -7,6 +7,7 @@ import java.io.PrintStream;
 import java.util.Objects;
 
 public class DirectoryService {
+
     public static void saveDirectoryTreeIntoFile(File directory, File outputFile) {
         try (PrintStream outputStream = new PrintStream(new FileOutputStream(outputFile))){
             outputStream.println(directory.getName());
